@@ -10,3 +10,8 @@ quantidade_vendedores_meta <- sum(vendedores_meta)
 
 # Substituir qualquer valor de vendas inferior a 15 por 15
 vendas_ajustadas <- ifelse(vendas < 15, 15, vendas)
+
+# Passo 5: Gerar um “relatório” de desempenho
+relatorio_desempenho <- ifelse(vendedores_meta, "Atingiu a meta", "Não atingiu a meta")
+
+
