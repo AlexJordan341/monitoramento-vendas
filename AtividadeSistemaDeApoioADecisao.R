@@ -5,3 +5,6 @@ vendas <- c(18, 22, 14, 25, 19, 16, 12, 23, 17, 20)
 meta_minima <- 20
 vendedores_meta <- vendas >= meta_minima
 
+# Calcular quantos vendedores atingiram a meta
+quantidade_vendedores_meta <- sum(vendedores_meta)
+
