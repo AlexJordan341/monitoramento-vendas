@@ -8,3 +8,5 @@ vendedores_meta <- vendas >= meta_minima
 # Calcular quantos vendedores atingiram a meta
 quantidade_vendedores_meta <- sum(vendedores_meta)
 
+# Substituir qualquer valor de vendas inferior a 15 por 15
+vendas_ajustadas <- ifelse(vendas < 15, 15, vendas)
